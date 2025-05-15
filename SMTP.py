@@ -181,8 +181,7 @@ class EmailSenderApp(QWidget):
 
             QMessageBox.information(self,"Success","Email sent successfully!")
         except Exception as e:
-            QMessageBox.critical(self,"Error",f"Error sending email: {str(e
-            )}")
+            QMessageBox.critical(self,"Error",f"Error sending email: {str(e)}")
 
     def attach_file_to_message(self,message,file_path):
         with open(file_path,'rb') as attachment:
